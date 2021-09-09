@@ -1,9 +1,11 @@
+import { Box } from "@material-ui/core";
+import Header from "./components/Header";
 const App = () => {
-    return (
-        <div>
-            hy react
-        </div>
-    )
-}
+  return (
+    <Box>
+      <Header />
+    </Box>
+  );
+};
 
-export default App
+export default App;
