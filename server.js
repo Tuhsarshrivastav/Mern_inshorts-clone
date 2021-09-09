@@ -6,6 +6,7 @@ const app = express();
 
 //imports
 import db from "./db.config.js";
+import Data from "./default.js";
 
 // Database config
 db();
@@ -18,3 +19,4 @@ const port = process.env.PORT || 8000;
 app.listen(port, () => {
   console.log(`Server is Running on : ${port} `);
 });
+Data();
