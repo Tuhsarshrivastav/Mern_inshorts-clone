@@ -11,6 +11,9 @@ import Routes from "./routes/routes.js";
 // Database config
 db();
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 // middlewares
 app.use(cors());
 app.use(express.json());

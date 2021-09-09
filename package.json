@@ -2,10 +2,13 @@
   "name": "merninshot_app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
+    "heroku-postbuild": "npm run client-install && npm run client-build"
   },
   "repository": {
     "type": "git",
